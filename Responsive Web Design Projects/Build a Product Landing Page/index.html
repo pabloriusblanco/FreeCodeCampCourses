@@ -1,0 +1,118 @@
+<!-- https://codepen.io/pabloriusblanco/pen/NWxNvBK -->
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Landing Page</title>
+    <script src="https://kit.fontawesome.com/7d4d438d9b.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|Amatic+SC:400,700|IBM+Plex+Sans:400,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background">
+    </div>
+
+    <header id="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://lignux.com/wp-content/uploads/2018/01/RetroArch-logo.png" alt="logo" id="header-img">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#title" class="nav-link">Home</a></li>
+                    <li><a href="#nuestrosJuegos" class="nav-link">Nuestros Juegos</a></li>
+                    <li><a href="#online_contenedor" class="nav-link">Online</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1 id="title">Retro Consolas</h1>
+        </div>
+
+    </header>
+
+    <div id="main" class="main">
+
+        <section id="subs" class="subs">
+            <h2>¡Suscribite para recibir la mejor información!</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Ingrese su dirección de email" required />
+                <input id="submit" type="submit" value="Enviar" class="btn" />
+            </form>
+        </section>
+
+        <section id="nuestrosJuegos" class="nuestrosJuegos">
+            <div class="juegos_contenedor">
+                <h2 class="titulo">Nuestros juegos</h3>
+                    <div class="imagenes_juegos">
+                        <img src="https://i.ibb.co/x11rv9H/episodio1.png"
+                            alt="screenshot del juego Chip'N Dale: Rescue Rangers">
+                        <img src="https://i.ibb.co/h9n8pXy/episodio2.png" alt="screenshot del juego Commander Keen 4">
+                        <img src="https://i.ibb.co/7pX8s2P/episodio3.png" alt="screenshot del juego Rick Dangerous 2">
+                        <img src="https://i.ibb.co/8Yg3yxR/episodio4.png" alt="screenshot del juego General Chaos">
+                        <img src="https://i.ibb.co/1msqc8z/episodio5.png" alt="screenshot del juego Clu Clu Land">
+                        <img src="https://i.ibb.co/ZmKkqv1/episodio6.png"
+                            alt="screenshot del juego Sid Meier's Pirates!">
+                    </div>
+            </div>
+        </section>
+
+        <section id="emuladoresOnline" class="emuladoresOnline">
+
+            <div class="online_contenedor" id="online_contenedor">
+                <h2 class="titulo">Jugá con nosotros</h3>
+                    <div class="paginas_contenedor">
+                        <div class="online">
+                            <a href="http://emulator.online/nes/" target="_blank"><img src="https://i.ibb.co/2jg5P5D/NES.png"
+                                    alt="Logo nes">
+                                <p>NES</p>
+                            </a>
+                        </div>
+                        <div class="online">
+                            <a href="http://emulator.online/snes/" target="_blank"><img src="https://i.ibb.co/PjWmYzb/SNES.png"
+                                    alt="Logo nes">
+                              <p>SNES</p>
+                            </a>
+                        </div>
+                        <div class="online">
+                            <a href="https://www.ssega.com/play/a-generic-sonic-1/3871" target="_blank"><img
+                                    src="https://i.ibb.co/vH8XhFm/MEGADRIVE.png" alt="Logo nes">
+                               <p> MEGADRIVE</p>
+                            </a>
+                        </div>
+                        <div class="online">
+                            <a href="http://emulator.online/gameboy/" target="_blank"><img src="https://i.ibb.co/L6zCSTz/gameboy.png"
+                                    alt="Logo nes">
+                                <p>GAMEBOY</p>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qcmKgjQTtnE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen id="video"></iframe>
+        </section>
+
+        <footer>
+            <div class="footer_contenedor">
+                <p class="texto_general">©pabloriusblanco - 2019</p>
+                <div class="redes_footer">
+                    <a href="https://anchor.fm/2players" target="_blank"><i class="fas fa-podcast" aria-hidden="true"></i></a>
+                    <a href="https://open.spotify.com/show/4MVa1h6bRMeHBp9GWm8osU" target="_blank"><i class="fab fa-spotify" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/revistareplay/?hl=es-la" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

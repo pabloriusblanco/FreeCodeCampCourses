@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  /* Remove default bullets */ }
+
+ul li::before {
+  content: "\2022";
+  color: #414141;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
+nav {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 4px solid darkgrey; }
+  nav header {
+    text-align: center;
+    padding: 8px;
+    padding-top: 1em;
+    font-family: "Roboto", serif;
+    text-transform: uppercase;
+    font-weight: 500; }
+  nav a {
+    padding: 8px;
+    border-top: 2px solid lightgrey;
+    margin: 1em 0 0 0;
+    font-size: 0.9em;
+    font-family: "Roboto", serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: dodgerblue; }
+    nav a:hover {
+      -webkit-animation: text-shadow-drop-center 0.6s both;
+      animation: text-shadow-drop-center 0.6s both; }
+
+main {
+  padding-left: 5%;
+  width: 72%;
+  margin-left: 20%; }
+  main .main-section {
+    padding-top: 2em; }
+    main .main-section img {
+      margin: 1em;
+      margin-left: 30%;
+      width: 30vw;
+      max-height: 30vw;
+      border-radius: 50%;
+      -webkit-box-shadow: 10px 10px 24px 7px rgba(30, 144, 255, 0.3);
+      -moz-box-shadow: 10px 10px 24px 7px rgba(30, 144, 255, 0.3);
+      box-shadow: 10px 10px 24px 7px rgba(30, 144, 255, 0.3); }
+      main .main-section img:hover {
+        -webkit-animation: vibrate-1 0.3s infinite both;
+        animation: vibrate-1 0.3s infinite both; }
+    main .main-section header {
+      font-family: "Roboto", serif;
+      text-transform: uppercase;
+      font-weight: 500; }
+      main .main-section header a {
+        color: #1f63a8;
+        font-weight: 500; }
+    main .main-section p {
+      font-family: "Roboto", serif;
+      font-weight: 300; }
+      main .main-section p a {
+        color: dodgerblue;
+        font-weight: 500; }
+    main .main-section ul li {
+      font-size: 0.9em;
+      font-family: "Roboto", serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #414141; }
+    main .main-section ul p {
+      font-size: 0.9em; }
+    main .main-section ol li {
+      font-size: 0.9em;
+      font-family: "Roboto", serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #414141;
+      margin-top: 1em; }
+    main .main-section ol code {
+      font-size: 0.9em;
+      font-family: "Roboto", serif;
+      font-weight: 300;
+      color: #414141; }
+      main .main-section ol code a {
+        color: dodgerblue;
+        font-weight: 300; }
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(30, 144, 255, 0); }
+  100% {
+    text-shadow: 0 0 0 rgba(30, 144, 255, 0.8); } }
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(30, 144, 255, 0); }
+  100% {
+    text-shadow: 0 0 0 rgba(30, 144, 255, 0.8); } }
+@media (max-width: 764px) {
+  nav {
+    display: none; }
+
+  main {
+    width: 90%;
+    margin: 0;
+    padding: 0 5% 0 5%; } }
+
+/*# sourceMappingURL=style.css.map */

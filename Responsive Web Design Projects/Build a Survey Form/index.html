@@ -1,0 +1,76 @@
+<!-- https://codepen.io/pabloriusblanco/pen/wvMaaar-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey FreeCodeCamp Pablo Rius blanco</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+    <!-- <script src="script.js"></script> -->
+
+<body>
+    <header id="mainHeader">
+        <h1 id="title">Survey FreeCodeCamp Form</h1>
+        <p id="description">Este un proyecto pequeño con Sass y JS para completar un formulario</p>
+    </header>
+    <div id="main" class="main">
+        <form action="" method="POST" id="survey-form">
+            <section class="name">
+                <label for="name" id="name-label">Ingrese su nombre</label>
+                <input type="text" name="nombre" id="name" placeholder="Ingrese su nombre aquí" required>
+            </section>
+            <section class="email">
+                <label for="email" id="email-label">Ingrese su email</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email aquí" required>
+            </section>
+            <section class="anti">
+                <label for="number" id="number-label">Ingrese su antigüedad en la empresa</label>
+                <input type="number" name="anti" id="number" min="0" max="60" placeholder="Ingrese su antigüedad aquí">
+            </section>
+            <section class="empresa">
+                <label for="dropdown">¿En qué campo se desarrolla la empresa?</label>
+                <select name="empresa" id="dropdown">
+                    <option value="medios">Medios de comuninación</option>
+                    <option value="publi">Agencia Publicitaria</option>
+                    <option value="tec">Soluciones tecnológicas</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </section>
+            <section class="recomendacion">
+                <span>¿Recomienda la empresa?</span>
+                <div class="opcionesradiobuttons">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="recomendacion" id="yes" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="recomendacion" id="no" value="no">
+                </div>
+            </section>
+            <section class="recomendacion">
+                <span>¿Recomienda la empresa?</span>
+                <div class="opcionesradiobuttons">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" name="recomendacion" id="yes" value="yes">
+                    <label for="no">No</label>
+                    <input type="checkbox" name="recomendacion" id="no" value="no">
+                </div>
+            </section>
+            <section class="extra">
+                <label for="extra">Comentarios</label>
+                <br>
+                <textarea id="extra" name="extra" rows="5" cols="40"
+                    placeholder="Ingrese algún comentario aquí"></textarea>
+            </section>
+            <section class="submission">
+                <input type="submit" value="Submit" id="submit">
+            </section>
+        </form>
+    </div>
+    <div class="background">
+    </div>
+</body>
+
+</html>

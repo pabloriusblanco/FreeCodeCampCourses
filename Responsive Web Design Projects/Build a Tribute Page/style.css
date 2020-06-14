@@ -1,0 +1,252 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  .main {
+    margin: 0 10%;
+  }
+  
+  /*****************NAV BAR ********************/
+  nav {
+    display: inline-block;
+  }
+  
+  .navbar {
+    position: fixed;
+    background-color: #036248;
+    height: 75px;
+    padding: 0;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    top: 0;
+  }
+  
+  .logobarra {
+    margin: 0;
+    display: inline-block;
+    font-family: "Cinzel", sans-serif;
+    color: #c2ecb0;
+  }
+  
+  .logobarra h1 {
+    font-size: 2em;
+  }
+  
+  nav li {
+    display: inline;
+    list-style-type: none;
+  }
+  
+  nav a {
+    position: relative;
+    color: #c2ecb0;
+    margin: 0 1em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-decoration: none;
+    transition: ease-in-out 200ms;
+  }
+  
+  nav a:hover{
+    color: rgb(240, 240, 240);
+  }
+  
+  /*****************RESTO ********************/
+  
+  .main {
+    margin: 0 2em;
+  }
+
+  /*****************NOSOTROS ********************/
+  .img-div {
+      margin: 0 0 0 0;
+      margin-top: 75px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .imagenwiki {
+    max-width: 100%;
+  }
+  
+  .descripcion {
+    position: relative;
+    text-align: justify;
+    color: #036248;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /*****************LINK INTERNOS ********************/
+  
+  .main h3 {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    color: #036248;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  }
+  
+  #Miembros,
+  #Nosotros,
+  #Discografia {
+    position: absolute;
+    top: -75px;
+  }
+  
+  .main h4 {
+    position: relative;
+    color: #036248;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  /*****************MIEMBROS ********************/
+  
+  .miembrosdiv {
+    text-align: center;
+  }
+  
+  .fotomiembro {
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+  }
+  
+  .miembrosdiv img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .miembrosdiv h4 {
+    text-align: center;
+    color: #c2ecb0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .miembrosdiv p {
+    text-align: center;
+    color: #036248;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  /*****************DISCOGRAFIA GRID ********************/
+  .container {
+  
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+  }
+  
+  .albums {
+    margin: 0;
+    color: black;
+    text-align: center;
+  
+  }
+  
+  .albums iframe {
+  
+    width: 20vw;
+    height: 20vw;
+    border: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 400ms;
+  }
+  
+  .albums iframe:hover {
+    opacity: 1;
+  }
+  
+  .container img {
+    margin: 0;
+    width: 20vw;
+  }
+  
+  .container img:hover {
+    opacity: 0;
+    margin: 0;
+    width: 20vw;
+  }
+  
+  .container p {
+    text-align: center;
+    color: #036248;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    margin: 0;
+  }
+  /*****************FOOTER********************/
+  
+  footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #036248;  
+  
+    text-align: center;
+  }
+  
+  footer img {
+    width: 15vw;
+    margin: 5px;
+  }
+  
+  
+  /*****************NAV RESPON ********************/
+  
+  @media all and (max-width: 768px) {
+    nav li {
+      display: none;
+      margin: 0;
+    }
+  
+    nav a {
+      margin: 0;
+    }
+  
+    .fotomiembro {
+      width: 80%;
+    }
+  
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .container img {
+    margin: 0;
+    padding: 0;
+    width: 35vw;
+  }
+  
+  .albums iframe {
+    display: none;
+  }
+  }

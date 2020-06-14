@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+header {
+  font-family: "Play", sans-serif;
+  color: white;
+  display: grid; }
+  header .navbar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center; }
+    header .navbar .logo {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .navbar .logo img {
+        height: 100%; }
+    header .navbar nav {
+      background-color: white; }
+      header .navbar nav ul {
+        display: flex; }
+        header .navbar nav ul li {
+          margin: 0 1rem;
+          list-style: none; }
+          header .navbar nav ul li a {
+            opacity: 0.75;
+            font-family: "IBM Plex Mono", monospace;
+            text-transform: uppercase;
+            color: #453566;
+            text-decoration: none;
+            transition: opacity ease-in-out 100ms; }
+            header .navbar nav ul li a:hover {
+              opacity: 1; }
+  header .title {
+    grid-area: 2 / 1 / 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .title h1 {
+      font-family: "Amatic SC", cursive;
+      font-weight: 600;
+      font-size: 5rem;
+      color: #453566; }
+
+.titulo {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  color: #453566; }
+
+.subs {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center; }
+  .subs h2 {
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    color: #453566; }
+  .subs form {
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    justify-content: center; }
+    .subs form #email {
+      width: 60%;
+      padding: 5px; }
+    .subs form #submit {
+      margin-left: 1rem;
+      background-color: white;
+      padding: 5px 15px;
+      border-radius: 3px; }
+
+.nuestrosJuegos {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .nuestrosJuegos .juegos_contenedor {
+    width: 90%; }
+    .nuestrosJuegos .juegos_contenedor .imagenes_juegos {
+      width: 100%;
+      display: grid;
+      grid: 1fr / auto auto auto;
+      flex-wrap: wrap;
+      gap: 16px; }
+      .nuestrosJuegos .juegos_contenedor .imagenes_juegos img {
+        width: 100%; }
+
+.emuladoresOnline {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .emuladoresOnline .online_contenedor {
+    width: 90%; }
+    .emuladoresOnline .online_contenedor .paginas_contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .emuladoresOnline .online_contenedor .paginas_contenedor .online a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .emuladoresOnline .online_contenedor .paginas_contenedor .online p {
+        font-family: "Amatic SC", cursive;
+        font-weight: 600;
+        font-size: 2rem;
+        color: #453566;
+        text-decoration: none; }
+
+.video {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .video iframe {
+    margin: 1em; }
+
+footer {
+  margin-top: 3rem;
+  background-color: #453566; }
+  footer .footer_contenedor {
+    position: relative;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center; }
+    footer .footer_contenedor p {
+      font-size: 0.8rem;
+      font-family: "IBM Plex Mono", monospace;
+      text-transform: uppercase;
+      color: white; }
+    footer .footer_contenedor .redes_footer {
+      text-decoration: none;
+      text-align: center; }
+      footer .footer_contenedor .redes_footer a {
+        margin: 0 1rem;
+        color: white; }
+
+.background {
+  top: 0;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.ibb.co/LRc8fc5/backgroundstars.png");
+  background-repeat: repeat; }
+
+@media (max-width: 764px) {
+  header .navbar {
+    height: 40px; }
+    header .navbar .logo {
+      width: 20%; }
+    header .navbar nav {
+      display: flex;
+      align-items: center; }
+      header .navbar nav ul li {
+        margin: 0 0.3rem; }
+        header .navbar nav ul li a {
+          font-size: 0.8rem; }
+          header .navbar nav ul li a:hover {
+            opacity: 1; }
+  header .title h1 {
+    font-size: 4rem; }
+
+  h2 {
+    font-size: 0.9rem; } }
+footer .footer_contenedor p {
+  font-size: 0.7rem; }
+footer .footer_contenedor .redes_footer {
+  text-decoration: none;
+  text-align: center; }
+  footer .footer_contenedor .redes_footer a {
+    font-size: 0.7rem;
+    margin: 0 1rem;
+    color: white; }
+
+/*# sourceMappingURL=styles.css.map */
