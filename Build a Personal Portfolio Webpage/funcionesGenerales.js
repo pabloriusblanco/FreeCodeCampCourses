@@ -1,0 +1,5 @@
+function funcionesGenerales() {
+    listeners();
+    navegacion();
+}
+
